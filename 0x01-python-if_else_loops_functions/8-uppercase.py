@@ -8,7 +8,7 @@ def uppercase(str):
         else:
             letterStr = letter
         if (i == len(str) - 1):
-            print(letterStr)
+            print("{}".format(letterStr))
         else:
-            print(letterStr, end="")
+            print("{}".format(letterStr), end="")
         i += 1
