@@ -3,6 +3,5 @@
 
 
 def inherits_from(obj, a_class):
-    '''Determines  if the object is an instance of 
-    a class that inherited (directly or indirectly)'''
+    '''Determines  if the object is an instance of  a class that inherited'''
     return issubclass(obj, a_class)
