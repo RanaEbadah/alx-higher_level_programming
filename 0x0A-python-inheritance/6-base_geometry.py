@@ -4,5 +4,5 @@ class BaseGeometry:
 
 
     def area(self):
-        '''raises an Exception with the message area() is not implemented'''
+        '''Mrthod to computer area'''
         raise Exception("area() is not implemented")
