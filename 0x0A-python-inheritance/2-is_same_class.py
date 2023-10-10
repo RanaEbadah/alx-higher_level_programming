@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-'''Module for isinstance function.'''
+'''Module for type function.'''
 
 
 def is_same_class(obj, a_class):
-    '''isinstance function.
+    '''type function.
     Args:
         obj: the object we have to look up it.
         a_class: the parent class
