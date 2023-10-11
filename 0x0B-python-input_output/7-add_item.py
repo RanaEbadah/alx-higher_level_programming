@@ -12,7 +12,9 @@ if __name__ == "__main__":
 
 
 args = sys.argv[1:]
-
-oldArgs = load_from_json_file("add_item.json")
+try:
+    oldArgs = load_from_json_file("add_item.json")
+except FileNotFoundError:
+    items = []
 oldArgs.extend(args)
 save_to_json_file(oldArgs, "add_item.json")
