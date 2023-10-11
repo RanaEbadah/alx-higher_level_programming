@@ -8,5 +8,4 @@ def read_file(filename=""):
     filename: the filr name'''
 
     with open(filename, 'r') as f:
-        data = f.read()
-        print(data)
+        print(f.read(), end="")
