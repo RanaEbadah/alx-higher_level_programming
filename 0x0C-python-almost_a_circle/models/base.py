@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+'''A module for the Base class'''
+
+
+class Base:
+    '''The Base class for all coming classes'''
+
+    __nb_objects = 0
+
+    def __init__(self, id=None):
+        '''constructor'''
+        if id is not None:
+            self.id = id
+        else:
+            self.__class__.__nb_objects += 1
+            self.id = self.__class__.__nb_objects
