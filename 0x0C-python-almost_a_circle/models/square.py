@@ -2,7 +2,6 @@
 '''Module for class square '''
 
 
-
 from models.rectangle import Rectangle
 
 
@@ -15,4 +14,5 @@ class Square(Rectangle):
 
     def __str__(self):
         '''str override'''
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
+        return "[Square] ({}) {}/{} - {}".format(self.id,
+                                                 self.x, self.y, self.height)
