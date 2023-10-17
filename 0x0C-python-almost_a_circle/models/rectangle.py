@@ -113,3 +113,21 @@ class Rectangle(Base):
         '''override of __str__()'''
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        '''assigns an argument for each attribute'''
+
+        if type(args[0] is int):
+            self.id = args[0]
+        if len(args) > 1:
+            if type(args[1] is int):
+                self.__width = args[1]
+        if len(args) > 2:
+            if type(args[2] is int):
+                self.__height = args[2]
+        if len(args) > 3:
+            if type(args[3] is int):
+                self.__x = args[3]
+        if len(args) > 4:
+            if type(args[4] is int):
+                self.__y = args[4]
