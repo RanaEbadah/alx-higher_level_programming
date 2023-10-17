@@ -2,6 +2,9 @@
 '''A module for the Base class'''
 
 
+import json
+
+
 class Base:
     '''The Base class for all coming classes'''
 
@@ -17,4 +20,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        pass
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
