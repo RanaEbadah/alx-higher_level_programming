@@ -18,6 +18,6 @@ if __name__ == "__main__":
     cur.execute("select * from states order by states.id ASC")
     states = cur.fetchall()
     for state in states:
-        print("(%s , '%s')" % (state[0], state[1]))
+        print(state)
     cur.close()
     db.close()
