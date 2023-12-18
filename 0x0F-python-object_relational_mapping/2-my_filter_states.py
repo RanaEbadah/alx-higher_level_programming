@@ -17,8 +17,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     cur.execute(
-        """select * from states where name = %s
-        order by states.id ASC""", (arguments[4],))
+        """select * from states where name = %s order by states.id ASC""", (arguments[4],))
     states = cur.fetchall()
     for state in states:
         print(state)
