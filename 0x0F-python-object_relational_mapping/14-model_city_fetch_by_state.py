@@ -19,4 +19,3 @@ if __name__ == "__main__":
     for c in resultedCities:
         state = session.query(State).filter(State.id == c.state_id).first()
         print("{}: ({}) {}".format(state.name, c.id, c.name))
- 
