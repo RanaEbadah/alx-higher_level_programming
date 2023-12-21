@@ -15,10 +15,11 @@ if __name__ == "__main__":
     )
     cur = db.cursor()
 
-    query = "SELECT * FROM cities WHERE name = (select id from states where name = %s) order by cities.id"
+    query = """SELECT name FROM cities
+      WHERE state_id in (select id from states where name = %s) order by id"""
     cur.execute(query, (arguments[4],))
     states = cur.fetchall()
-    for state in states:
-        print(state)
+    result = ', '.join(state[0] for state in states)
+    print(result)
     cur.close()
     db.close()
