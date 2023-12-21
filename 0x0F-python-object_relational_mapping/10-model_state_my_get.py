@@ -20,7 +20,7 @@ if __name__ == "__main__":
     if (states):
         for state in states:
             tuple_elements = [str(element) for element in state]
-            result = ", ".join(tuple_elements)
+            result = "\n".join(tuple_elements)
 
             print(result)
     else:
